@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN // Fonts & Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Welcome - Uniworld App</title>
+</head>
+
+<body id="main-page login-page container">
+    <main class="uni-basic h-100">
+        <div class="row space-center">
+            <div class="col-4 no-ovf">
+                <div class="card card-1 full-height">
+                    <div class="row">
+                        <img src="images/logo-light.png" class="site-logo" alt="Uniworld logo" title="Logo" />
+                    </div>
+                    <div class="row">
+                        <span class="heading-1 m-top-1"> Managing your projects just got easier.</span>
+                    </div>
+                    <span class="icon-float">
+                        <i class="ri-settings-4-line"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-4 no-ovf">
+                <!-- START Login Form-->
+                <div class="side-login">
+                    <div class="row heading-2">
+                        <div class="col-4 no-pad">
+                            <h5> Login </h5>
+                        </div>
+                        <div class="col-8">
+                            <span class="separator-1"></span>
+                        </div>
+                    </div>
+                </div>
+                <form class="login-frm">
+                    <div class="form-group">
+                        <label> <i class="ri-user-line"></i> Username </label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label> <i class="ri-lock-2-line"></i> Password</label>
+                        <div class="pwd-field">
+                            <input type="password" class="pwd-field" id="pwd-field">
+                            <span toggle="#pwd-field" class="pwd-icon"><i class="ri-lock-fill"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn-login" type="submit">Let's Go <i class="ri-arrow-right-line"></i> </button>
+                        <a href="#" class="sm-txt"> <i class="ri-spam-line"></i> Forgot Password? </span> </a>
+                    </div>
+                </form>
+                <!-- END Login Form-->
+            </div>
+        </div>
+
+        <span class="float-element-icon">
+            <i class="ri-community-line"></i>
+        </span>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    box-sizing-border-box;
+}
+
+:root {
+    --primary-color: #992e61;
+    --primary-gradient: linear-gradient(173deg, rgba(208, 46, 97, 1) 21%, rgba(153, 46, 97, 1) 80%);
+    --secondary: #856240;
+    --light-color: #fff;
+    --default-font: 'Exo', sans-serif;
+    --default-font-color: #333333;
+    --body-bg: #f7f6f8;
+    --radius30: 30px;
+    --shadow-1: 0.7px 0.5px 1.4px -10px rgba(0, 0, 0, 0.016),
+        1.8px 1.3px 3.6px -10px rgba(0, 0, 0, 0.022),
+        3.7px 2.7px 7.4px -10px rgba(0, 0, 0, 0.028),
+        7.7px 5.5px 15.3px -10px rgba(0, 0, 0, 0.034),
+        21px 15px 42px -10px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: var(--default-font);
+    background-color: var(--body-bg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /* margin: 0 -15px; */
+}
+
+.col-1 {
+    flex: 1 0 8.33%;
+    max-width: 8.33%;
+    padding: 0 15px;
+}
+
+.col-2 {
+    flex: 1 0 16.66%;
+    max-width: 16.66%;
+    padding: 0 15px;
+}
+
+.col-3 {
+    flex: 1 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+
+.col-5 {
+    flex: 1 0 41.66%;
+    max-width: 41.66%;
+    padding: 0 15px;
+}
+
+.col-6 {
+    flex: 1 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.col-7 {
+    flex: 1 0 58.33%;
+    max-width: 58.33%;
+    padding: 0 15px;
+}
+
+.col-8 {
+    flex: 1 0 66.66%;
+    max-width: 66.66%;
+    padding: 0 15px;
+}
+
+.col-9 {
+    flex: 1 0 75%;
+    max-width: 75%;
+    padding: 0 15px;
+}
+
+.col-10 {
+    flex: 1 0 83.33%;
+    max-width: 83.33%;
+    padding: 0 15px;
+}
+
+.col-11 {
+    flex: 1 0 91.66%;
+    max-width: 91.66%;
+    padding: 0 15px;
+}
+
+.col-12 {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], button {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--shadow-1);
+    height: 3.5rem;
+    background: var(--light-color);
+}
+
+.btn-login {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: var(--primary-gradient);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.login-frm {
+    margin-top: 10%;
+}
+
+.btn-login:hover {
+    background: var(--secondary);
+    color: var(--light-color);
+    box-shadow: 2px 2px 5px var(--shadow-1);
+}
+
+.no-ovf {
+    overflow: hidden;
+}
+
+.row.space-center {
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    border-radius: var(--radius30);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-1 {
+    padding: 30px;
+}
+
+.card-1.full-height {
+    height: 70vh;
+    background: var(--primary-gradient);
+}
+
+img.site-logo {
+    max-width: 100%;
+    width: 60%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.heading-1 {
+    font-weight: 700;
+    font-size: 30px;
+    width: 80%;
+    color: var(--light-color);
+}
+
+.m-top-1 {
+    margin-top: 3rem;
+}
+
+.icon-float i {
+    font-size: 20rem;
+    position: absolute;
+    bottom: -5rem;
+    right: -3rem;
+    color: white;
+    opacity: 0.1;
+}
+
+.heading-2 h5 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.separator-1 {
+    width: 100%;
+}
+
+.heading-2 .col-8 {
+    display: flex;
+    position: relative;
+}
+
+.separator-1::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 4px;
+    border-image: var(--primary-gradient);
+    border-image-slice: 1;
+    position: absolute;
+    z-index: 1;
+    right: -8rem;
+    top: -37px;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 12px;
+}
+
+.login-frm label {
+    padding-bottom: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+input[type="password"] {
+    width: 100%;
+}
+
+.pwd-field {
+    position: relative;
+}
+
+.pwd-field span {
+    position: absolute;
+    right: 0;
+    top: 1.1rem;
+    right: 4%;
+    color: gray;
+}
+
+.sm-txt {
+    text-decoration: none;
+    color: var(--default-font-color);
+}
+
+.sm-txt:hover {
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+.float-element-icon {
+    position: fixed;
+    bottom: -20%;
+    right: 13%;
+    font-size: 450;
+    opacity: .1;
+}
