@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN // Fonts & Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Welcome - Uniworld App</title>
+</head>
+
+<body id="main-page dashboard container">
+    <!-- START Header -->
+    <header class="main-header-container">
+        <div class="main-header-inner">
+            <div class="row top-header">
+                <div class="col-4 logo-div">
+                    <!-- Site logo-->
+                    <img src="images/logo.png" class="main-logo" alt="Uniworld logo" title="Logo" />
+                </div>
+                <div class="col-4">
+                    <!-- Might be useful -->
+                </div>
+                <div class="col-4">
+                    <!-- User name and settings -->
+                    <div class="usr-container">
+                        <div class="row">
+                            <div class="col-4 light-dark">
+                                <div class="switcher">
+                                    <div class="switch-inner">
+                                        <div class="light">
+                                            <i class="ri-sun-line"></i>
+                                        </div>
+                                        <div class="dark active">
+                                            <i class="ri-moon-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7 names_role">
+                                <span class="username-item"> Hello, <span class="bold-txt"> Username </span></span>
+                                <span class="role-item">Admin</span>
+                            </div>
+                            <div class="col-1 usr-settings">
+                                <img src="images/user.jpg" class="user-img" id="user-img-settings" alt="User" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <main class="uni-dash">
+        <div class="sub-header-inner">
+            <!-- Breadcrumbs area -->
+            <div class="breadcrumbs">
+                <div class="row">
+                    <div class="col-4">
+                        <label> Dashboard </label>
+                    </div>
+                    <div class="col-8">
+                        <!-- Will use for inner navigations on complex tabs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Side Navigation ** Laravel style? ** -->
+        <div class="main-dashboard">
+            <div class="row">
+                <div class="col-2">
+                    <div class="side-nav">
+                        <div class="menu">
+                            <ul>
+                                <li class="active"><a href="#"> <i class="ri-dashboard-fill"></i> Projects </a>
+                                    <ul>
+                                        <li><a href="#">Demo 1</a></li>
+                                        <li><a href="#">Demo 2</a></li>
+                                        <li><a href="#">Demo 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> <i class="ri-line-chart-fill"></i> Accounting</a></li>
+                                <li><a href="#"> <i class="ri-hotel-fill"></i>Mark Project </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="dash-content" id="dash-content">
+                        <div class="container-header">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h4> Projects </h4>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" id="sortProjects" onkeyup="myFunction()"
+                                        placeholder="Search by name">
+
+                                </div>
+                            </div>
+                        </div>
+                        <table id="projectsTable">
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Budget</th>
+                                    <th>Approved</th>
+                                    <th>Paid</th>
+                                    <th>Due Payment</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>RENOVATION OF STAFF CLUB AT BANK OF TANZANIA</td>
+                                    <td>25,000</td>
+                                    <td>34,000,000</td>
+                                    <td>25,0000</td>
+                                    <td>445,000</td>
+                                    <td>34,000</td>
+                                </tr>
+                                <tr>
+                                    <td>STAFF CLUB AT BANK OF TANZANIA</td>
+                                    <td>25,000</td>
+                                    <td>34,000,000</td>
+                                    <td>25,0000</td>
+                                    <td>445,000</td>
+                                    <td>34,000</td>
+                                </tr>
+                                <tr>
+                                    <td>RENOVATION OF S</td>
+                                    <td>25,000</td>
+                                    <td>34,000,000</td>
+                                    <td>25,0000</td>
+                                    <td>445,000</td>
+                                    <td>34,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="side-nav-container">
+                        <div class="row">
+                            <h3> <i class="ri-tools-line"></i> Quick Tools</h3>
+                        </div>
+                        <div class="row">
+                            <a class="qt-btn">
+                                <div class="row">
+                                    <div class="col-10">
+                                        Create Project
+                                    </div>
+                                    <div class="col-2 tool-icon">
+                                        <i class="ri-tools-line"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
