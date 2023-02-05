@@ -116,6 +116,7 @@ main {
     padding: 0 15px;
 }
 
+
 form {
     display: flex;
     flex-direction: column;
@@ -281,4 +282,52 @@ input[type="password"] {
     right: 13%;
     font-size: 450;
     opacity: .1;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+
+    /* Login Page*/
+    .row.space-center {
+        flex-flow: column;
+    }
+
+    .uni-basic.h-100 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .card.card-1.full-height {
+        height: auto;
+    }
+
+    .icon-float i {
+        font-size: 14rem;
+        bottom: -4rem;
+        right: -3rem;
+    }
+
+    .side-login {
+        padding-top: 2rem;
+    }
+
+    .float-element-icon {
+        position: fixed;
+        bottom: -2%;
+        right: -1%;
+        font-size: 200px;
+        opacity: .1;
+    }
+
+    .float-element-icon {
+        display: none;
+    }
+
+    .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
 }
