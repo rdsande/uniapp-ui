@@ -20,22 +20,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     }
 // });
 
-// Filter Table on Projects
-function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("sortProjects");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("projectsTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
+//Modal
+$(".open").on("click", function () {
+    $(".popup-overlay, .popup-content").addClass("active");
+});
+
+$(".close, .popup-overlay").on("click", function () {
+    $(".popup-overlay, .popup-content").removeClass("active");
+});
+
+// Filter Projects
+function filterFunction() {
+    let filterValue, list, li, i;
+    filterValue = document.getElementById("filterInput").value.toLowerCase();
+    list = document.getElementById("listProjects");
+    li = list.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        if (li[i].innerHTML.toLowerCase().indexOf(filterValue) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
         }
     }
 }
