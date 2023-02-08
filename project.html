@@ -84,12 +84,12 @@
         <div class="main-dashboard">
             <div class="row">
                 <!-- Navigation -->
-                <div class="col-2">
+                <div class="col-2 navigation-col">
                     <!-- Extend Menu -->
                     <div class="side-nav slide-in-blurred-left">
                         <div class="menu">
                             <ul>
-                                <li class="active"><a href="#"> <i class="ri-dashboard-fill"></i> Projects </a>
+                                <li><a href="#"> <i class="ri-dashboard-fill"></i> Projects </a>
                                     <ul>
                                         <li><a href="#">Demo 1</a></li>
                                         <li><a href="#">Demo 2</a></li>
@@ -112,62 +112,251 @@
                     <div class="dash-content" id="dash-content">
                         <!-- All Projects List -->
                         <div class="project common">
-                            <div class="row separator-2">
+
+                            <div class="row modal-header-container">
+                                <div class="modal-heading">
+                                    <h3 class="project-modal-title"> Renovation of staff club at Bank of Tanzania </h1>
+                                </div>
+                            </div>
+
+                            <div class="accordion-container" id="expandRow">
+                                <div class="navigation">
+                                    <div class="nav-item active">General Summary</div>
+                                    <div class="nav-item">Material Summary</div>
+                                    <div class="nav-item">Labour Summary </div>
+                                    <div class="nav-item">Contigency Summary </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content-item active">
+                                        <h3>General Summary</h3>
+                                        <!-- Summary Item -->
+                                        <div class="row inner-cards">
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-focus-3-line"></i> Planned </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-checkbox-line"></i> Negotiated
+                                                    </label>
+                                                    <span> 90,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label><i class="ri-wallet-3-line"></i> Approved </label>
+                                                    <span> 9,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-file-warning-line"></i> Paid </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>Material Summary</h3>
+                                        <!-- Summary Item -->
+                                        <div class="row inner-cards">
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-focus-3-line"></i> Material Planned </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-checkbox-line"></i> Material Negotiated
+                                                    </label>
+                                                    <span> 90,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label><i class="ri-wallet-3-line"></i> Material Approved </label>
+                                                    <span> 9,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-file-warning-line"></i> Material Paid </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>Labour Summary</h3>
+                                        <div class="row">
+                                            <!-- Summary Item -->
+                                            <div class="row inner-cards">
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-focus-3-line"></i> Labour Planned </label>
+                                                        <span> 13,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-checkbox-line"></i> Labour Negotiated
+                                                        </label>
+                                                        <span> 90,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label><i class="ri-wallet-3-line"></i> Labour Approved </label>
+                                                        <span> 9,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-file-warning-line"></i> Labour Paid
+                                                        </label>
+                                                        <span> 13,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>Contingency Summary</h3>
+                                        <div class="row">
+                                            <!-- Summary Item -->
+                                            <div class="row inner-cards">
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-focus-3-line"></i> Contigency Planned
+                                                        </label>
+                                                        <span> 13,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-checkbox-line"></i> Contigency Negotiated
+                                                        </label>
+                                                        <span> 90,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label><i class="ri-wallet-3-line"></i> Contigency Approved
+                                                        </label>
+                                                        <span> 9,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="card-details">
+                                                        <label> <i class="ri-file-warning-line"></i> Contigency Paid
+                                                        </label>
+                                                        <span> 13,900,900,900</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row separator-2 mt-1">
                                 <div class="col-9">
                                     <span class="title-3 pr-title">
-                                        <h3> Renovation of staff club at Bank of Tanzania </h3>
+                                        <h3> Phases </h3>
                                     </span>
                                 </div>
                                 <div class="col-3">
                                     <div class="row">
                                         <div class="col-9">
-                                            <a class="small-btn btn">
-                                                View All Phases <i class="ri-arrow-right-s-line"></i>
-                                            </a>
+                                            <!-- Blank -->
                                         </div>
                                         <div class="col-3 btn tooltip-trigger">
-                                            <a class="btn-more" data-modal="#project-p1">
-                                                <i class="ri-more-2-fill"></i>
-                                            </a><!-- Tooltip-->
-                                            <!-- <span class="tooltip"> Show Summary </span> -->
+                                            <!-- Blank -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="common-table">
-                                <table id="phases-project-1" class="common-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Column 1</th>
-                                            <th>Column 2</th>
-                                            <th>Column 3</th>
-                                            <th>Column 4</th>
-                                            <th>Column 5</th>
-                                            <th>Column 6</th>
-                                            <th>Column 7</th>
-                                            <th>Column 8</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Test1</td>
-                                            <td>Test2</td>
-                                            <td>Test3</td>
-                                            <td>Test4</td>
-                                            <td>Test5</td>
-                                            <td>Test6</td>
-                                            <td>Test7</td>
-                                            <td>Test8</td>
-                                            <td><button class="delete-button">
-                                                    <i class="ri-close-line"></i>
-                                                </button></td>
-                                        </tr>
-                                        <!-- Add more rows as needed -->
-                                    </tbody>
-                                </table>
-                            </div>
 
+                            <div class="row">
+                                <ul id="listPhases" class="listCommon">
+                                    <!-- Single Project List -->
+                                    <li id="project1">
+                                        <div class="row separator-2">
+                                            <div class="col-9">
+                                                <span class="title-3 pr-title"> Renovation of staff club at Bank of
+                                                    Tanzania
+                                                </span>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                        <!-- Empty -->
+                                                    </div>
+                                                    <div class="col-5 btn" id="cardActions">
+                                                        <a class="btn-more" data-modal="#project-p1">
+                                                            <i class="ri-pencil-line"></i>
+                                                        </a>
+                                                        <a class="btn-more" data-modal="#project-p1">
+                                                            <i class="ri-close-line"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row inner-cards">
+                                            <div class="col-3">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-focus-3-line"></i> Planned Budget </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-checkbox-line"></i> Negotiated </label>
+                                                    <span> 90,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card-details">
+                                                    <label><i class="ri-wallet-3-line"></i> Approved </label>
+                                                    <span> 9,900,900,900</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="card-details">
+                                                    <label><i class="ri-wallet-3-line"></i> Paid </label>
+                                                    <span> 9,900,900,900</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3 due">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-file-warning-line"></i> Balance </label>
+                                                    <span> 13,900,900,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 due">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-bank-line"></i> Due Payment </label>
+                                                    <span> 20,900,900,900</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3 balance">
+                                                <div class="card-details">
+                                                    <label> <i class="ri-bank-line"></i> Phase Contigency </label>
+                                                    <span> 20,900,900,900</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
