@@ -3,6 +3,10 @@
     box-sizing-border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 :root {
     --primary-color: #992e61;
     --primary-gradient: linear-gradient(173deg, rgba(208, 46, 97, 1) 21%, rgba(153, 46, 97, 1) 80%);
@@ -281,6 +285,11 @@ input, input[type="password"] {
     right: 13%;
     font-size: 450;
     opacity: .1;
+}
+
+/* Modal */
+.modal {
+	max-width: 80%;
 }
 
 /* Mobile CSS */
@@ -669,33 +678,6 @@ input, input[type="password"] {
     color: var(--light-color);
 }
 
-/* Modal */
-.popup-overlay {
-    visibility: hidden;
-    position: absolute;
-    background: var(--light-color);
-    width: 50%;
-    height: 50%;
-    left: 25%;
-    top: 24%;
-    box-shadow: var(--shadow-3);
-    border-radius: var(--radius30);
-
-}
-
-.popup-overlay.active {
-    visibility: visible;
-    text-align: center;
-}
-
-.popup-content {
-    visibility: hidden;
-}
-
-.popup-content.active {
-    visibility: visible;
-}
-
 #quicktoolsmenu {
     display: contents;
     list-style: none;
@@ -724,16 +706,10 @@ input, input[type="password"] {
     align-items: center;
 }
 
-.row.inner-cards {
-    display: none;
-}
-
-#listProjects li:hover .row.inner-cards {
+.card-details {
     display: flex;
-    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    flex-flow: column;
 }
-
 
 /* Animations */
 .fade-in-bottom {
@@ -878,3 +854,4 @@ input, input[type="password"] {
         opacity: 1;
     }
 }
+
