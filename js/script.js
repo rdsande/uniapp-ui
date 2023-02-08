@@ -89,3 +89,19 @@ deleteButtons.forEach((button) => {
     table.deleteRow(row.rowIndex);
   });
 });
+
+//Select
+$(document).ready(function () {
+  const select = $("#selectProjects");
+  const selectedValue = $(".selected-value");
+
+  select.on("change", function () {
+    selectedValue.text($(this).val());
+  });
+});
+
+
+// Toggle Div
+$(".collapse-btn").click(function () {
+  $("#expandRow").toggle();
+});
