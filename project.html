@@ -85,6 +85,7 @@
             <div class="row">
                 <!-- Navigation -->
                 <div class="col-2">
+                    <!-- Extend Menu -->
                     <div class="side-nav slide-in-blurred-left">
                         <div class="menu">
                             <ul>
@@ -104,85 +105,70 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Extend Menu -->
                 </div>
                 <!-- Main Item -->
                 <div class="col-8">
                     <div class="dash-content" id="dash-content">
-                        <div class="container-header">
-                            <div class="row">
-                                <div class="col-4">
-                                    <h4> Projects </h4>
+                        <!-- All Projects List -->
+                        <div class="project common">
+                            <div class="row separator-2">
+                                <div class="col-9">
+                                    <span class="title-3 pr-title">
+                                        <h3> Renovation of staff club at Bank of Tanzania </h3>
+                                    </span>
                                 </div>
-                                <div class="col-8">
-                                    <div class="form-group">
-                                        <div class="search">
-                                            <input type="text" class="pwd-field" id="filterInput"
-                                                onkeyup="filterFunction()" placeholder="Search by name">
-                                            <span class="pwd-icon"><i class="ri-search-eye-line"></i></span>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="small-btn btn">
+                                                View All Phases <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-3 btn tooltip-trigger">
+                                            <a class="btn-more" data-modal="#project-p1">
+                                                <i class="ri-more-2-fill"></i>
+                                            </a><!-- Tooltip-->
+                                            <!-- <span class="tooltip"> Show Summary </span> -->
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
+                            <div class="common-table">
+                                <table id="phases-project-1" class="common-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Column 1</th>
+                                            <th>Column 2</th>
+                                            <th>Column 3</th>
+                                            <th>Column 4</th>
+                                            <th>Column 5</th>
+                                            <th>Column 6</th>
+                                            <th>Column 7</th>
+                                            <th>Column 8</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Test1</td>
+                                            <td>Test2</td>
+                                            <td>Test3</td>
+                                            <td>Test4</td>
+                                            <td>Test5</td>
+                                            <td>Test6</td>
+                                            <td>Test7</td>
+                                            <td>Test8</td>
+                                            <td><button class="delete-button">
+                                                    <i class="ri-close-line"></i>
+                                                </button></td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
-                        <!-- All Projects List -->
-                        <ul id="listProjects">
-                            <!-- Single Project List -->
-                            <li id="project1">
-                                <div class="row separator-2">
-                                    <div class="col-9">
-                                        <span class="title-3 pr-title"> Renovation of staff club at Bank of Tanzania
-                                        </span>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="row">
-                                            <div class="col-9">
-                                                <a class="small-btn btn">
-                                                    View Project <i class="ri-arrow-right-s-line"></i>
-                                                </a>
-                                            </div>
-                                            <div class="col-3 btn">
-                                                <a class="btn-more" data-modal="#project-p1">
-                                                    <i class="ri-more-2-fill"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row inner-cards">
-                                    <div class="col-2">
-                                        <div class="card-details">
-                                            <label> <i class="ri-focus-3-line"></i> Budget </label>
-                                            <span> 13,900,900,900</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="card-details">
-                                            <label> <i class="ri-checkbox-line"></i> Approved </label>
-                                            <span> 90,900,900,900</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="card-details">
-                                            <label><i class="ri-wallet-3-line"></i> Paid </label>
-                                            <span> 9,900,900,900</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-2 due">
-                                        <div class="card-details">
-                                            <label> <i class="ri-file-warning-line"></i> Due Payment </label>
-                                            <span> 13,900,900,900</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-2 balance">
-                                        <div class="card-details">
-                                            <label> <i class="ri-bank-line"></i> Balance </label>
-                                            <span> 20,900,900,900</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <!-- Quick Tools-->
@@ -192,11 +178,11 @@
                             <h3> <i class="ri-tools-line"></i> Quick Tools</h3>
                         </div>
                         <div class="row">
-                            <ul class="qtsmenu" id="quicktoolsmenu">
+                            <ul class="qtsmenu commonmenu" id="projectsmenu">
                                 <li> <a class="qt-btn btn">
                                         <div class="row">
                                             <div class="col-10">
-                                                Create Project
+                                                Create New Phase
                                             </div>
                                             <div class="col-2 tool-icon">
                                                 <i class="ri-add-line"></i>
