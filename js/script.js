@@ -45,3 +45,47 @@ function filterFunction() {
     }
   }
 }
+
+//Accordion
+const navItems = document.querySelectorAll(".nav-item");
+const contentItems = document.querySelectorAll(".content-item");
+
+navItems.forEach((navItem, index) => {
+  navItem.addEventListener("click", () => {
+    navItems.forEach(item => item.classList.remove("active"));
+    contentItems.forEach(item => item.classList.remove("active"));
+    navItem.classList.add("active");
+    contentItems[index].classList.add("active");
+  });
+});
+
+/** Bar Graph */
+const bars = document.querySelectorAll(".bar");
+const values = document.querySelectorAll(".value");
+
+bars.forEach((bar, index) => {
+  bar.style.height = `${values[index].textContent}px`;
+});
+
+//Tooltip
+const trigger = document.querySelector(".tooltip-trigger");
+const tooltip = document.querySelector(".tooltip");
+
+trigger.addEventListener("mouseenter", () => {
+  tooltip.style.display = "block";
+});
+
+trigger.addEventListener("mouseleave", () => {
+  tooltip.style.display = "none";
+});
+
+//Table
+const deleteButtons = document.querySelectorAll(".delete-button");
+const table = document.querySelector(".common-table");
+
+deleteButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const row = event.target.parentNode.parentNode;
+    table.deleteRow(row.rowIndex);
+  });
+});
