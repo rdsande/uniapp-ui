@@ -583,6 +583,14 @@ input, input[type="password"] {
     width: 100%;
 }
 
+.form-group input {
+    margin-bottom: 0 !important;
+}
+
+.form-group.row {
+    padding: 0 0 15px 0 !important;
+}
+
 .menu ul {
     list-style: none;
     margin: 0;
