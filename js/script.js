@@ -102,6 +102,16 @@ $(document).ready(function () {
 
 
 // Toggle Div
-$(".collapse-btn").click(function () {
-  $("#expandRow").toggle();
-});
+
+// $(function () {
+//   $(".collapse-btn").click(function () {
+//     $("#expandRow").toggle();
+//   });
+// });
+
+
+// $(function () {
+//   $(".quicktools-mob").click(function () {
+//     $(".side-nav-container").toggle();
+//   });
+// });
