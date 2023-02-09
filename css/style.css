@@ -132,7 +132,7 @@ form {
     flex-direction: column;
 }
 
-input, input[type="text"], input[type="password"], button {
+/*input, input[type="text"], input[type="password"], button {
     margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
@@ -142,7 +142,67 @@ input, input[type="text"], input[type="password"], button {
     height: 3rem;
     background: var(--light-color);
     margin-top: 10px;
+}*/
+
+::placeholder {
+  color: transparent;
 }
+::-ms-input-placeholder {
+  color: transparent;
+}
+label {
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+input {
+  position: relative;
+}
+input {
+  border: 1px solid gray;
+  outline: none;
+  font-size: 1em;
+  border-radius: 4px;
+  padding-inline: 1.36em;
+  height: 4rem;
+  width: 100%;
+  box-shadow: var(--shadow-3);
+}
+input:focus {
+  border: 2px solid var(--color-forgot);
+}
+.input-label {
+  display: grid;
+  position: absolute;
+  top: 1.36rem;
+  left: 1.36rem;
+  color: gray;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+input:focus ~ .label-size,
+input:not(:placeholder-shown) ~ .label-size {
+  top: 0.6rem;
+  left: 1.36rem;
+  font-size: 0.9em;
+}
+input:valid {
+  border: 2px solid var(--color-valid);
+}
+input:not(:placeholder-shown):invalid {
+  border-bottom: 3px solid orange;
+}
+input:not(:placeholder-shown):invalid ~ .text-error {
+  display: block;
+}
+
+.uni-basic.h-100 {
+  font-size: 16px;
+}
+
+.container-header .col-4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 
 .btn-login {
     padding: 10px 20px;
@@ -300,6 +360,10 @@ input, input[type="password"] {
     max-width: 80%;
 }
 
+.uni-basic .row {
+    width: 100% !important;
+}
+
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
 
@@ -308,6 +372,37 @@ input, input[type="password"] {
         flex-flow: column;
     }
 
+	.accordion-container {
+  flex-flow: column;
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.nav-item {
+  max-width: 20%;
+}
+
+.navigation {
+  width: 100% !important;
+  display: flex;
+}
+
+.dash-content {
+  padding: 0 !important;
+}
+
+.project.common {
+  padding: 0;
+}
+
+.inner-cards [class*="col-"], .inner-cards .col-4, .inner-cards .col-3 {
+  width: 46% !important;
+  flex: 1 0 46% !important;
+  max-width: 46% !important;
+}
     .uni-basic.h-100 {
         height: auto;
         padding: 10px;
@@ -498,6 +593,8 @@ input, input[type="password"] {
     box-shadow: var(--shadow-2);
 }
 
+
+
 .menu ul li {
     width: 100%;
     float: left;
@@ -545,7 +642,7 @@ input, input[type="password"] {
     margin-right: 10px;
 }
 
-.menu ul li.active, .menu ul li:hover {
+/*.menu ul li.active, .menu ul li:hover {
     background: var(--light-color);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -555,6 +652,30 @@ input, input[type="password"] {
     border-image-slice: 1;
     border-radius: .3rem;
     box-shadow: var(--shadow-2);
+}*/
+
+.menu ul li:hover, .menu ul li.active:hover {
+    background: var(--light-color);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 6px solid;
+    border-image: var(--primary-gradient);
+    border-image-slice: 1;
+    border-radius: .3rem;
+    box-shadow: var(--shadow-2);
+}
+
+.menu ul li.active {
+  background: transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-right: none;
+  border-image: var(--primary-gradient);
+  border-image-slice: 1;
+  border-radius: .3rem;
+  box-shadow: unset;
 }
 
 .dash-content {
@@ -1015,6 +1136,11 @@ table th {
     body, html {
         font-size: 13px;
     }
+
+	.modal {
+  max-width: 100%;
+  width: 100%;
+}
 
     .side-nav-container {
         margin-top: calc(100% - 17rem);
