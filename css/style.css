@@ -14,9 +14,12 @@ html {
     --secondary: #856240;
     --light-color: #fff;
     --default-font: 'Exo', sans-serif;
-    --default-font-color: #333333;
+    --default-font-color: #3d465a;
     --body-bg: #F8F8F8;
     --error: #ca444b;
+    --color1: #ceedd1;
+    --color2: #fcf4ce;
+    --color3: #c2d5eb;
     --success: #52a451;
     --radius30: 30px;
     --shadow-2: 0rem 0.3125rem 0.3125rem 0rem rgb(82 63 105 / 5%);
@@ -1039,17 +1042,47 @@ table th {
     }
 }
 
+/* List Table */
+.list-items {
+    list-style: none;
+    padding: 0;
+}
 
+.form-view-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
 
+.report-sections .col-4 {
+    padding: 10px;
+    width: 25%;
+    flex: 1 0 25%;
+}
 
+.row.report-sections .col-4:last-child {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
 
+.list-items li {
+    padding-bottom: 20px;
+}
 
+.form-view-items span {
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    padding-bottom: 8px;
+}
 
+.form-view-items label {
+    width: 50%;
+}
 
-
-
-
-
+.form-view-items span {
+    font-weight: bold;
+    padding-left: 10px;
+}
 
 .delete-button {
     background-color: var(--primary-color);
@@ -1109,6 +1142,93 @@ th, td {
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 8px;
     text-align: left;
+}
+
+.list-items li:nth-child(2) {
+    margin-bottom: 4rem;
+}
+
+.row.report-sections {
+    font-size: 14px;
+}
+
+.logo-report img {
+    width: 100%;
+}
+
+.report-inner .col-8 h3 {
+    color: var(--light-color);
+    text-align: right;
+}
+
+.row.report-inner.title-sec {
+    background: var(--default-font-color);
+    align-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.itm1, .itm2, .itm3 {
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.itm1 {
+    background: var(--color1);
+}
+
+.itm2 {
+    background: var(--color2);
+}
+
+.itm3 {
+    background: var(--color3);
+}
+
+.highlight-success {
+    color: var(--success);
+}
+
+.highlight-alert {
+    color: var(--error);
+}
+
+.highlight-misc {
+    color: var(--secondary);
+}
+
+.row.report-sections .col-4:last-child {
+    background: var(--body-bg);
+    border-radius: 1rem;
+}
+
+.row.report-sections .col-4:first-child {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.account-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.account-btn i {
+    font-size: 30px;
+    color: var(--error);
+    padding-right: 10px;
+}
+
+.account-btn {
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+}
+
+.account-btn a {
+    display: flex;
+    align-items: center;
 }
 
 /* Animations */

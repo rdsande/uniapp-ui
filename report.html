@@ -1,0 +1,310 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN // Fonts & Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Modal CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css"
+        integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Welcome - Uniworld App</title>
+</head>
+
+<body id="main-page dashboard container">
+    <!-- START Header -->
+    <header class="main-header-container">
+        <div class="main-header-inner">
+            <div class="row top-header">
+                <div class="col-4 logo-div">
+                    <!-- Site logo-->
+                    <img src="images/logo.png" class="main-logo" alt="Uniworld logo" title="Logo" />
+                </div>
+                <div class="col-4">
+                    <!-- Might be useful -->
+                </div>
+                <div class="col-4">
+                    <!-- User name and settings -->
+                    <div class="usr-container">
+                        <div class="row">
+                            <div class="col-4 light-dark">
+                                <div class="switcher">
+                                    <div class="switch-inner">
+                                        <div class="light">
+                                            <i class="ri-sun-line"></i>
+                                        </div>
+                                        <div class="dark active">
+                                            <i class="ri-moon-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7 names_role">
+                                <span class="username-item"> Hello, <span class="bold-txt"> Username </span></span>
+                                <span class="role-item">Admin</span>
+                            </div>
+                            <div class="col-1 usr-settings">
+                                <img src="images/user.jpg" class="user-img" id="user-img-settings" alt="User" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <main class="uni-dash">
+        <div class="sub-header-inner">
+            <!-- Breadcrumbs area -->
+            <div class="breadcrumbs">
+                <div class="row">
+                    <div class="col-4">
+                        <label> Dashboard </label>
+                    </div>
+                    <div class="col-8">
+                        <!-- Will use for inner navigations on complex tabs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Side Navigation ** Laravel style? ** -->
+        <div class="main-dashboard">
+            <div class="row">
+                <!-- Navigation -->
+                <div class="col-2 navigation-col">
+                    <!-- Extend Menu -->
+                    <div class="side-nav slide-in-blurred-left">
+                        <div class="menu">
+                            <ul>
+                                <li class="active"><a href="#"> <i class="ri-dashboard-fill"></i> Projects </a>
+                                    <ul>
+                                        <li><a href="#">Demo 1</a></li>
+                                        <li><a href="#">Demo 2</a></li>
+                                        <li><a href="#">Demo 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> <i class="ri-line-chart-fill"></i> Accounting</a></li>
+                                <li><a href="#"> <i class="ri-wallet-fill"></i> Mark Payments </a></li>
+                                <li><a href="#"> <i class="ri-user-6-fill"></i> Clients </a></li>
+                                <li><a href="#"> <i class="ri-user-settings-fill"></i>User Management </a></li>
+                                <li><a href="#"> <i class="ri-shield-check-fill"></i>Pending Approvals </a></li>
+                                <li><a href="#"> <i class="ri-calculator-fill"></i>Update Calculations </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Extend Menu -->
+                </div>
+                <!-- Main Item -->
+                <div class="col-8">
+                    <div class="dash-content" id="dash-content">
+                        <!-- All Projects List -->
+                        <div class="report common">
+                            <div class="row report-inner">
+                                <h3 class="text-center"> Project Name </h3>
+                            </div>
+                            <div class="row report-inner title-sec">
+                                <div class="col-4">
+                                    <div class="logo-report">
+                                        <img src="images/logo-light.png" class="logo-inside" alt="Uniworld logo"
+                                            title="Logo" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h3> FINANCIAL SUMMARY AS OF TODATE</h3>
+                                </div>
+                            </div>
+                            <div class="row report-sections">
+                                <div class="col-4">
+                                    <ul class="list-items">
+                                        <li class="color-1">
+                                            <div class="form-view-items">
+                                                <label> Total BOQ Value Incl </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="color-1">
+                                            <div class="form-view-items">
+                                                <label> Total Contigency and Preliminaries </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> Total BOQ Paid </label>
+                                                <span class="highlight-success"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> Total BOQ Not Paid </label>
+                                                <span class="highlight-alert"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> Total Contigence Paid </label>
+                                                <span class="highlight-success"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> Total Contigence Not Paid </label>
+                                                <span class="highlight-alert"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list-items">
+                                        <li class="color-1">
+                                            <div class="form-view-items">
+                                                <label> Total Project Income </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="color-1">
+                                            <div class="form-view-items">
+                                                <label> Total Paid </label>
+                                                <span class="highlight-success"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> Total Amount Not Paid </label>
+                                                <span class="highlight-alert"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> TOTAL BOQ SPENT </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> TOTAL CONTIGENCE SPENT </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> TOTAL AMOUNT SPENT </label>
+                                                <span class="highlight-misc"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-view-items">
+                                                <label> </label>
+                                                <span class="general-total"> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list-items">
+                                        <li class="itm1">
+                                            <div class="form-view-items">
+                                                <label> Total Expected Profit </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="itm1">
+                                            <div class="form-view-items">
+                                                <label> Total Expected GP </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="itm2">
+                                            <div class="form-view-items">
+                                                <label> Balance at Hand </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="itm2">
+                                            <div class="form-view-items">
+                                                <label> Retained Amount </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="itm2">
+                                            <div class="form-view-items">
+                                                <label> Disposable Amount </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                        <li class="itm3">
+                                            <div class="form-view-items">
+                                                <label> Cost Accomplished </label>
+                                                <span> 30,000,000 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Tools-->
+                <div class="col-2">
+                    <div class="side-nav-container">
+                        <div class="row">
+                            <h3> <i class="ri-tools-line"></i> Quick Tools</h3>
+                        </div>
+                        <div class="row">
+                            <ul class="qtsmenu commonmenu" id="projectsmenu">
+                                <li> <a class="qt-btn btn">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                Create New Phase
+                                            </div>
+                                            <div class="col-2 tool-icon">
+                                                <i class="ri-add-line"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Extra Menu -->
+                            <ul class="extramenu">
+                                <li> <a href=""><i class="ri-arrow-right-s-line"></i>Material Requests </a></li>
+                                <li>
+                                    <a href=""> <i class="ri-arrow-right-s-line"></i> Material Budget</a>
+                                </li>
+                                <li> <a href=""> <i class="ri-arrow-right-s-line"></i> Labour Requests </a>
+                                </li>
+                                <li> <a href=""> <i class="ri-arrow-right-s-line"></i> Labour Budget </a>
+                                </li>
+                                <li> <a href=""> <i class="ri-arrow-right-s-line"></i> Contingency Requests </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+
+    <!-- Scripts -->
+    <!-- Modal CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
