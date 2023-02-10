@@ -78,7 +78,7 @@ main {
 
 .col-3 {
     flex: 1 0 25%;
-    max-width: 25%;
+    /* max-width: 25%; */
 }
 
 .col-4 {
@@ -588,12 +588,16 @@ a {
     color: inherit !important;
 }
 
-.main-dashboard .row {
-    width: 100%;
+#listPhases li .row {
+    width: auto !important;
 }
 
-#expandRow {
-    flex-flow: column;
+#cardActions {
+    flex: 1 0 70% !important;
+    width: 70% !important;
+    max-width: 100%;
+    justify-content: flex-end;
+    display: flex;
 }
 
 /** Dashboard **/
@@ -890,6 +894,7 @@ a {
 
 #expandRow .content {
     padding: 10px;
+    width: 75%;
 }
 
 .content-item .row {
@@ -903,7 +908,7 @@ a {
 
 .inner-cards .col-4 {
     flex: 1 0 30%;
-    max-width: 30%;
+    max-width: auto;
 }
 
 .container-header .row {
@@ -944,7 +949,7 @@ a {
 }
 
 .small-btn {
-    background: var(--secondary);
+    background: var(--default-font-color);
     padding: 3px 10px;
     border-radius: .3rem;
     display: flex;
@@ -952,7 +957,26 @@ a {
     align-items: center;
     justify-content: space-around;
     margin-right: 5px;
+    color: var(--light-color) !important;
+}
+
+.backbtn {
+    background: #ccc;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: .3rem;
+    margin-left: 2rem;
+}
+
+.backbtn:hover {
+    background: var(--primary-color);
     color: var(--light-color);
+    cursor: pointer;
+}
+
+.row.inner-cards .col-4 {
+    flex: 1 0 22%;
+    width: 22%;
 }
 
 .separator-2 .row {
@@ -974,7 +998,7 @@ a {
 }
 
 .navigation {
-    width: 150px;
+    width: 25%;
     background-color: #eee;
 }
 
@@ -1571,6 +1595,42 @@ th, td {
     display: flex;
     align-items: center;
 }
+
+.user-settings {
+    position: absolute;
+    right: 1%;
+    top: 4rem;
+    background: var(--default-font-color);
+    padding: 10px;
+    color: var(--light-color);
+    box-shadow: var(--shadow-2);
+    z-index: 9999;
+    display: none;
+}
+
+.user-settings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-settings ul li {
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: .2rem;
+}
+
+.user-settings ul li i {
+    padding-right: 10px;
+}
+
+.user-settings ul li:hover {
+    background: var(--light-color);
+    color: var(--default-font-color);
+    cursor: pointer;
+}
+
 
 /* Animations */
 .fade-in-bottom {

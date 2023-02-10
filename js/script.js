@@ -115,3 +115,8 @@ $(document).ready(function () {
 //     $(".side-nav-container").toggle();
 //   });
 // });
+
+//Go Back
+function goBack() {
+  window.history.back();
+}

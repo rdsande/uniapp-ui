@@ -63,7 +63,12 @@
                                     <i class="ri-menu-3-line"></i>
                                 </a>
                             </div>
-
+                        </div>
+                        <div class="user-settings">
+                            <ul>
+                                <li> <i class="ri-lock-password-line"></i> Change Password </li>
+                                <li> <i class="ri-shut-down-line"></i> Log Out </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -108,8 +113,6 @@
                                 <li><a href="#"> <i class="ri-user-settings-fill"></i>User Management </a></li>
                                 <li><a href="#"> <i class="ri-shield-check-fill"></i>Pending Approvals </a></li>
                                 <li><a href="#"> <i class="ri-calculator-fill"></i>Update Calculations </a></li>
-                                <span class="spacer"></span>
-                                <li class="logout"><a href="#"> <i class="ri-shut-down-line"></i>Log out </a></li>
                             </ul>
                         </div>
                     </div>
@@ -384,6 +387,12 @@
         $(function () {
             $(".quicktools-mob").click(function () {
                 $(".side-nav-container").toggle();
+            });
+        });
+
+        $(function () {
+            $(".names_role").click(function () {
+                $(".user-settings").toggle();
             });
         });
 
