@@ -213,7 +213,7 @@ input:not(:placeholder-shown):invalid~.text-error {
 }
 
 
-.btn-login {
+.btn-login, button {
     padding: 10px 20px;
     font-size: 16px;
     background: var(--primary-gradient);
@@ -232,7 +232,7 @@ input:not(:placeholder-shown):invalid~.text-error {
     margin-top: 10%;
 }
 
-.btn-login:hover {
+.btn-login:hover, button:hover {
     background: var(--secondary);
     color: var(--light-color);
     box-shadow: 2px 2px 5px var(--shadow-1);
@@ -1230,7 +1230,7 @@ table th {
         margin: auto;
     }
 
-    .qt-btn.btn row {
+    .qt-btn.btn .row {
         flex-wrap: wrap;
         flex-flow: row;
         display: flex;
