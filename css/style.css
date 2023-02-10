@@ -145,62 +145,71 @@ form {
 }*/
 
 ::placeholder {
-  color: transparent;
+    color: transparent;
 }
+
 ::-ms-input-placeholder {
-  color: transparent;
+    color: transparent;
 }
+
 label {
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
 }
 
 input {
-  position: relative;
+    position: relative;
 }
+
 input {
-  border: 1px solid gray;
-  outline: none;
-  font-size: 1em;
-  border-radius: 4px;
-  padding-inline: 1.36em;
-  height: 4rem;
-  width: 100%;
-  box-shadow: var(--shadow-3);
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1em;
+    border-radius: 4px;
+    padding-inline: 1.36em;
+    height: 4rem;
+    width: 100%;
+    box-shadow: var(--shadow-3);
 }
+
 input:focus {
-  border: 2px solid var(--color-forgot);
+    border: 2px solid var(--color-forgot);
 }
+
 .input-label {
-  display: grid;
-  position: absolute;
-  top: 1.36rem;
-  left: 1.36rem;
-  color: gray;
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    display: grid;
+    position: absolute;
+    top: 1.36rem;
+    left: 1.36rem;
+    color: gray;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
 }
-input:focus ~ .label-size,
-input:not(:placeholder-shown) ~ .label-size {
-  top: 0.6rem;
-  left: 1.36rem;
-  font-size: 0.9em;
+
+input:focus~.label-size,
+input:not(:placeholder-shown)~.label-size {
+    top: 0.6rem;
+    left: 1.36rem;
+    font-size: 0.9em;
 }
+
 input:valid {
-  border: 2px solid var(--color-valid);
+    border: 2px solid var(--color-valid);
 }
+
 input:not(:placeholder-shown):invalid {
-  border-bottom: 3px solid orange;
+    border-bottom: 3px solid orange;
 }
-input:not(:placeholder-shown):invalid ~ .text-error {
-  display: block;
+
+input:not(:placeholder-shown):invalid~.text-error {
+    display: block;
 }
 
 .uni-basic.h-100 {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .container-header .col-4 {
-  font-size: 20px;
-  margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -372,37 +381,38 @@ input, input[type="password"] {
         flex-flow: column;
     }
 
-	.accordion-container {
-  flex-flow: column;
-  width: 100%;
-}
+    .accordion-container {
+        flex-flow: column;
+        width: 100%;
+    }
 
-.navigation {
-  width: 100%;
-}
+    .navigation {
+        width: 100%;
+    }
 
-.nav-item {
-  max-width: 20%;
-}
+    .nav-item {
+        max-width: 20%;
+    }
 
-.navigation {
-  width: 100% !important;
-  display: flex;
-}
+    .navigation {
+        width: 100% !important;
+        display: flex;
+    }
 
-.dash-content {
-  padding: 0 !important;
-}
+    .dash-content {
+        padding: 0 !important;
+    }
 
-.project.common {
-  padding: 0;
-}
+    .project.common {
+        padding: 0;
+    }
 
-.inner-cards [class*="col-"], .inner-cards .col-4, .inner-cards .col-3 {
-  width: 46% !important;
-  flex: 1 0 46% !important;
-  max-width: 46% !important;
-}
+    .inner-cards [class*="col-"], .inner-cards .col-4, .inner-cards .col-3 {
+        width: 46% !important;
+        flex: 1 0 46% !important;
+        max-width: 46% !important;
+    }
+
     .uni-basic.h-100 {
         height: auto;
         padding: 10px;
@@ -573,6 +583,19 @@ input, input[type="password"] {
     padding: 15px;
 }
 
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.main-dashboard .row {
+    width: 100%;
+}
+
+#expandRow {
+    flex-flow: column;
+}
+
 /** Dashboard **/
 
 .side-nav {
@@ -675,15 +698,15 @@ input, input[type="password"] {
 }
 
 .menu ul li.active {
-  background: transparent;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-right: none;
-  border-image: var(--primary-gradient);
-  border-image-slice: 1;
-  border-radius: .3rem;
-  box-shadow: unset;
+    background: transparent;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: none;
+    border-image: var(--primary-gradient);
+    border-image-slice: 1;
+    border-radius: .3rem;
+    box-shadow: unset;
 }
 
 .dash-content {
@@ -1145,10 +1168,10 @@ table th {
         font-size: 13px;
     }
 
-	.modal {
-  max-width: 100%;
-  width: 100%;
-}
+    .modal {
+        max-width: 100%;
+        width: 100%;
+    }
 
     .side-nav-container {
         margin-top: calc(100% - 17rem);
